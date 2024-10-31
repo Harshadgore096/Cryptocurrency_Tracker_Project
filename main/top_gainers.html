@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Top Gainers - CryptoDime Track</title>
+    <style>
+        h1{
+            color: green;
+            font-weight: bolder;
+            font-size: 60px;
+            text-align: center;
+            border:2px solid;
+        }
+        body{
+            background-color: rgb(52,49,49);
+        }
+        #Home{
+        color:rgb(255, 94, 0);
+        background-color: rgb(83, 215, 184);
+        margin-left: 20px;
+        height: 40px;
+        width: 90px;
+        margin-bottom: 30px;
+        font-weight: bolder;
+        border: 2px solid;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top Gainers</h1>
+        <div class="header-buttons">
+            <button onclick="navigateToHome()" id="Home">Home</button>
+        </div>
+    </header>
+
+    <div class="crypto-container" id="crypto-container">
+        <!-- Top Gainers data will be dynamically added here -->
+    </div>
+
+    <script src="top_gainers.js"></script>
+</body>
+</html>
