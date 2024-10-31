@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Registration Page</title>
+</head>
+<style>
+    body{
+        background-image: url("bakground_page.jpeg");
+    }
+    .card
+    {
+        background-color: rgb(130,129,131);
+    }
+    .form-text{
+        color: blue;
+    }
+   #toggleIcon
+   {
+    color: brown;
+   }
+   .form-group
+   {
+    color: gold;
+   }
+   #ib
+   {
+    background-color: blue;
+    border: 2px solid;
+    color: gold;
+   }
+   #cb
+   {
+    background-color: rgb(245, 78, 7);
+    border: 2px solid;
+    color: gold;
+   }
+</style>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 align="center" style="font-size: 50px;font-weight: bolder;color: gold;">Registration</h3>
+                </div>
+                <div class="card-body">
+                    <form id="registrationForm" action="process_registration.php" method="post">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" class="form-control" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile No:</label>
+                            <input type="tel" class="form-control" name="mobile" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password"> Set Password:</label>
+                            <input type="password" class="form-control" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                           
+                         <small class="form-text ">Password must contain one uppercase letter, one lowercase letter, one digit, and one special character.</small>
+                         <div class="input-group-append">
+                            <span class="input-group-text" onclick="togglePassword()">
+                                <i id="toggleIcon" class="fa fa-eye-slash">show password</i>
+                            </span>
+                        </div>
+                        
+                        </div>
+                       
+                        <input type="submit" value="submit" id="ib">
+                        <input type="reset" value="Clear" id="cb">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script>
+      function togglePassword() {
+        var passwordInput = document.getElementById('password');
+        var toggleIcon = document.getElementById('toggleIcon');
+
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            toggleIcon.classList.remove('fa-eye-slash');
+            toggleIcon.classList.add('fa-eye');
+        } else {
+            passwordInput.type = 'password';
+            toggleIcon.classList.remove('fa-eye');
+            toggleIcon.classList.add('fa-eye-slash');
+        }
+    }
+
+</script>
+
+</body>
+</html>

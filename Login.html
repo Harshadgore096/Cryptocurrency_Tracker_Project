@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login Page</title>
+    <style>
+        .form-group
+        {
+            color: gold;
+        }
+        body{
+            background-image: url("istockphoto-1463455851-170667a.webp");
+        }
+    .card{
+        background-color: rgb(130,129,131);
+        margin-top: 100px;
+    } 
+    
+    #sb{
+    
+    background-color: aqua;
+    border: 2px solid;
+    color: black;
+    
+    }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 style="color: gold;font-weight: bolder;font-size: 50px;">Login</h3>
+                </div>
+                <div class="card-body">
+                    <form id="loginForm" action="validate.php" method="POST">
+                        <div class="form-group">
+                            <label for="username">Email:</label>
+                            <input type="email" class="form-control" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <input type="submit"  value="Submit" id="sb">
+                        <a href="#" onclick="forgotPassword()"style="color:gold;font-weight:bolder">Forgot Password?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+<script>
+    function forgotPassword()
+    {
+    
+    window.location.href="updatePassword.html";
+    
+    
+    }
+
+   
+</script>
+
+</body>
+</html>

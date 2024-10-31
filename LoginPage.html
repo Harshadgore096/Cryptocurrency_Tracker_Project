@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css"  href="./LoginPage.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+      background-image:url('background-realistic-abstract-technology-particle_23-2148431735.jpg(1).avif');
+     
+        }
+     .row{
+        margin-top: 30px;
+     }
+     .col-sm{
+        margin-left: 20px;
+     }
+ 
+    </style>
+    
+    </head>
+    <body onClick="msg()">
+        <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-center">
+            <h1 style="color:rgb(235, 239, 11);padding-left: 90px;padding-top:40px;font-size:100px;">CryptoDime Trek</h1>
+          </div>
+            </div>
+            <div class="row-2">
+                <div class="d-flex justify-content-center">
+            <h4 style="padding-left: 35px;color:green;padding-top:50px;">Get All Information About Your Favourite CryptoCurrency.....</h4>
+              </div>
+            </div>
+            <div class="row " id="animate">
+              
+                <div class="col-sm">
+                   
+                <img src="solana-sol-logo.png" style="height:70px">
+                <h4 style="color: chartreuse;padding-top: 10px;">SOL</h4> 
+                <h6 style="color: green;">$95.28↑2.86%(1d)</h6></div>
+            
+           
+                <div class="col-sm">
+                    <img src="ethereum-eth-logo.png" style="height:70px">
+                    <h4 style="color: chartreuse;padding-top: 10px;">ETH</h4> 
+                    <h6 style="color: red;">$2,2635.41↓0.32%(1d)</h6>
+                </div>
+                
+                <div class="col-sm">
+                    <img src="tether-usdt-logo.png" style="height:70px">
+                    
+                    <h4 style="color: chartreuse;padding-top: 10px;">USDt</h4> 
+                    <h6 style="color:red;">$0.9991↓0.02%(1d)</h6>
+                
+                </div>
+               
+                <div class="col-sm">
+                    <img src="bitcoin-btc-logo.png" style="height:70px"> 
+                    <h4 style="color: chartreuse;padding-top: 10px;">BTC</h4>  
+                    <h6 style="color:red;">$41,980.13↓0.34%(1d)</h6>
+                </div>
+               
+                <div class="col-sm">
+                    <img src="tron-trx-logo.png" style="height:70px">  
+                    <h4 style="color: chartreuse;padding-top: 10px;">TRX</h4> 
+                    <h6 style="color: green;">$0.1590.670↑0.82%(1d)</h6>
+                </div>
+               
+                <div class="col-sm">
+                    <img src="dogecoin-doge-logo.png" style="height:70px"> 
+                    <h4 style="color: chartreuse;padding-top: 10px;">DOGE</h4> 
+                    <h6 style="color: red;">$0.0787↓1.32%(1d)</h6>
+               
+             </div>
+            </div>
+              <div class="row">
+                    <div class="col-sm rounded-5" style="background-color:transparent;">
+                    <p style="color:yellowgreen;font-family: 'Courier New', Courier, monospace;text-align: center;padding-top: 20px;font-weight: bold;
+                    font-size: 30px;">Step 1:Register/Sign Up</p>
+                        <img src="pngtree-register-now-label-psd-png-image_6208123.png" style="height:200px;padding-top: 20px;padding-left: 60px;">
+                    </div>
+                    <div class="col-sm rounded-5" style="background-color: transparent;padding-left: 30px;">
+                        
+                        <p style="color:yellowgreen;font-family: 'Courier New', Courier, monospace;padding-top: 20px;font-size:30px ;font-weight: bold;"> Step 2:Log In To Portal</p>
+                        <img src="2341.png_860.png" style="height:200px;padding-top: 20px;padding-left: 40px;"> 
+                    </div>
+                    <div class="col-sm rounded-5" style="background-color:transparent;">
+                       <p style="color:yellowgreen;font-family: 'Courier New', Courier, monospace;font-size:30px;font-weight: bold;padding-top:20px ;">Step 3:Explore&Analyse</p>
+                        <img src="app-banner.png" style="height:200px;padding-left:20px;">
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                 <p style="color: rgb(160, 218, 24);font-size: 40px;font-weight: bold;padding-top: 50px;">Start Your Crypto Journey Now...</p>
+                </div>
+                <div class="col-sm">
+                  
+                
+                 <input type="submit" value="LOGIN" onclick="redirect_Login_page()" style="padding-top:10px;color: goldenrod;background-color: rgb(67, 58, 58);margin-top: 70px;">
+               
+                
+                 <input type="submit" value="RESGISTER" onclick="redirect_Register_page()" style="padding-top: 10px;color: goldenrod;background-color: rgb(67, 58, 58);"></div>
+                 <script>
+                    function redirect_Login_page()
+                    {
+                        window.location.href="Login.html";
+                    }
+
+                   function redirect_Register_page()
+                   {
+                    window.location.href="register.html";
+                   }
+                   
+                   function msg()
+                   {
+                     window.alert("New User...?Register to Explore....Existing User.....?LogIn Please..!");
+                   
+                   }
+                 </script>
+                </div>
+            </div>
+           
+            
+        </body>
+</html>
